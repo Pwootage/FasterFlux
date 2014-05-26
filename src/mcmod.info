@@ -1,0 +1,16 @@
+[
+{
+  "modid": "fasterflux",
+  "name": "Faster Flux",
+  "description": "End-game Redstone Flux machines",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["Pwootage", "Korcana", "Obeythecreed"],
+  "credits": "Rotarycraft, Thermal Expansion, Forge, etc, etc",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
