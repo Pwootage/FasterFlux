@@ -16,8 +16,14 @@ object BlockIcons {
   val TOP: String = "top"
   val BOTTOM: String = "bottom"
 
-  def register(reg: IconRegister) = {}
+  def register(reg: IconRegister) = {
+    for (icon <- ICONS) {
+      icon.register(reg)
+    }
+  }
 
+  private var ICONS = List[BlockIcons]()
+  
   val BATTERY_CONTROLLER = new BlockIcons(Map(
     FRONT -> new IconData("fasterflux:batterycontroller")))
 
@@ -31,6 +37,8 @@ object BlockIcons {
     FRONT -> new IconData("fasterflux:unknown")))
 
   class BlockIcons(icons: Map[String, IconData]) {
+    ICONS = ICONS :+ this
+    
     def register(reg: IconRegister) {
       for ((id, icon) <- icons) {
         icon.register(reg)
