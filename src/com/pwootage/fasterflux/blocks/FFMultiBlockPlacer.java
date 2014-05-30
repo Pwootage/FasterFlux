@@ -14,7 +14,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class FFMultiBlockPlacer extends ItemBlock {
-	private static Map<String, Icon> icons = new HashMap<String, Icon>();  
 
 	public FFMultiBlockPlacer(int id) {
 		super(id);
@@ -31,24 +30,17 @@ public class FFMultiBlockPlacer extends ItemBlock {
 		return "mb.placer." + is.getItemDamage();
 	}
 	
-	@Override
-	public int getSpriteNumber() {
-		return 0;
-	}
+//	@Override
+//	public Icon getIconFromDamage(int dmg) {
+//		FFMultiBlockType type = FFMultiBlockType.getTypeFromMeta(dmg);
+//		return type.icons.getIcon(BlockIcons.FRONT);
+//	}
 	
-	@Override
-	public Icon getIconFromDamage(int dmg) {
-		FFMultiBlockType type = FFMultiBlockType.getTypeFromMeta(dmg);
-		return type.icons.getIcon(BlockIcons.FRONT);
-	}
-	
-	@Override
-	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister reg) {
-		super.registerIcons(reg);
-		icons.put("battery.controller", reg.registerIcon("fasterflux:batterycontroller"));
-		icons.put("battery.anode", reg.registerIcon("fasterflux:anode"));
-	}
+//	@Override
+//	@SideOnly(Side.CLIENT)
+//	public void registerIcons(IconRegister reg) {
+//		super.registerIcons(reg);
+//	}
 	
 	
 }

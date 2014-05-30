@@ -56,6 +56,12 @@ public abstract class BlockIcons {
 			addIcon(FRONT, new IconData("fasterflux:anode"));
 		}
 	};
+	public static final BlockIcons BATTERY_CASE = new BlockIcons() {
+		@Override
+		protected void init() {
+			addIcon(FRONT, new IconData("fasterflux:batterycase"));
+		}
+	};
 	public static final BlockIcons UNKNOWN = new BlockIcons() {
 		@Override
 		protected void init() {

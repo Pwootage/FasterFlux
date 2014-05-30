@@ -11,6 +11,7 @@ public enum FFMultiBlockType {
 	//Note how these are in increasing order - I use ordinal()
 	BATTERY_CONTROLLER(0, BlockIcons.BATTERY_CONTROLLER, true), 
 	BATTERY_ANODE(1, BlockIcons.BATTERY_ANODE, false),
+	BATTERY_CASE(2, BlockIcons.BATTERY_CASE, false),
 	UNKNOWN(17, BlockIcons.UNKNOWN, false),
 	;
 
