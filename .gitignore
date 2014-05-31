@@ -2,4 +2,8 @@
 .classpath
 .metadata
 .settings
+.gradle
+Thumbs.db
+build
+lib
 bin

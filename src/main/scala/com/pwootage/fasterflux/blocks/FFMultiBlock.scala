@@ -49,17 +49,10 @@ class FFMultiBlock(id: Int, mat: Material) extends Block(id, mat) {
   private def getIconBasedOnFacing(icons: BlockIcons.BlockIcons): Icon = icons.getIcon(BlockIcons.FRONT)
 
   override def onBlockActivated(world: World, x: Int, y: Int, z: Int, player: EntityPlayer, meta: Int, par7: Float, par8: Float, par9: Float): Boolean = {
-    System.out.println(x + ", " + y + ", " + z)
     val te = world.getBlockTileEntity(x, y, z)
     if (te == null || player.isSneaking) {
       return false
     } else {
-      if (te.isInstanceOf[TileEntityBatterySlaveBase]) {
-        System.out.println(te.asInstanceOf[TileEntityBatterySlaveBase].getParent())
-      }
-      if (te.isInstanceOf[IEnergyHandler]) {
-        System.out.println(te.asInstanceOf[IEnergyHandler].getEnergyStored(ForgeDirection.UNKNOWN))
-      }
       player.openGui(FasterFlux, 0, world, x, y, z)
       return true
     }
