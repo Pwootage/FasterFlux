@@ -1,3 +1,16 @@
 mb.placer.0.name=Battery Controller
 mb.placer.1.name=Battery Anode
 mb.placer.2.name=Battery Casing
+mb.placer.3.name=Battery Output
+mb.placer.4.name=Battery Input
+item.ff.scwire.name=Superconducting Enderium Wire
+item.ff.scwire.empty.name=Superconducting Enderium Wire (Unfilled)
+item.ff.baseplate.name=Battery Base Plate
+item.ff.computercore.name=Battery Computer Core
+item.ff.liquid.star.bucket.name=Bucket of Liquid Nether Star
+item.ff.scnetherassembly.name=Superconducting Nether Star Assembly
+item.ff.scnetherunstable.name=Superconducting Nether Star (Unstable)
+item.ff.scnetherstable.name=Superconducting Nether Star
+fluid.ff.liquid.star=Liquid Nether Star
+tile.ff.liquid.star.name=Liquid Nether Star
+itemGroup.tabFasterFlux=Faster Flux
