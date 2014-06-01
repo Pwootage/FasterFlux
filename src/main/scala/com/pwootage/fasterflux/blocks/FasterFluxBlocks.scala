@@ -38,12 +38,4 @@ class FasterFluxBlocks(conf: FasterFluxConfig, event: FMLInitializationEvent) {
   GameRegistry.registerTileEntity(classOf[TileEntityBatteryController], "ff.battery.controller")
   GameRegistry.registerTileEntity(classOf[TileEntityBatteryOutput], "ff.battery.output")
   GameRegistry.registerTileEntity(classOf[TileEntityBatteryInput], "ff.battery.input")
-  
-  @ForgeSubscribe
-  def postStich(event: TextureStitchEvent.Post) {
-    liquidNether.setIcons(BlockIcons.LIQUID_NETHER.getIcon(BlockIcons.STILL),
-        BlockIcons.LIQUID_NETHER.getIcon(BlockIcons.FLOWING))
-  }
-  
-  MinecraftForge.EVENT_BUS.register(this)
 }
